@@ -26,8 +26,46 @@ export class TvChannel extends LitElement {
         display: inline-flex;
       }
       .wrapper {
-        padding: 16px;
         background-color: #eeeeee;
+        width: 100%;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px grey;
+        margin-right: 3px;
+        margin-left: 3px;
+        margin-top: 3px;
+      }
+
+      h3 {
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        font-size: 12px;
+        justify-content: center;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+
+      @media (min-width: 800px) {
+        /* h3{
+          font-size: 18px;
+        }
+
+        h4 {
+          font-size: 15px;
+        } */
+
+      /* .wrapper{
+        max-width: auto;
+        max-height: auto;
+      } */
       }
     `;
   }

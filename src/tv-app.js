@@ -30,14 +30,21 @@ export class TvApp extends LitElement {
       css`
       :host {
         display: block;
-        margin: 16px;
-        padding: 16px;
+        padding-left: 10px;
       }
 
       .course-topics{
         display: flex;
         flex-direction: column;
-        padding: 16px;
+        width: 275px;
+        max-height: 540px;
+        overflow: auto;
+
+      }
+      @media (min-width){
+        /* .course-topics{
+          width: 20%;
+        } */
       }
       `
     ];
