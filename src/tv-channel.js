@@ -37,12 +37,13 @@ export class TvChannel extends LitElement {
       }
 
       h3 {
-        font-size: 20px;
+        font-size: 15px;
         align-items: center;
         justify-content: center;
         margin-left: 10px;
-        margin-top: 5px;
+        margin-top: 10px;
         margin-bottom: 10px;
+        margin-right: 10px;
       }
 
       h4 {
@@ -51,6 +52,7 @@ export class TvChannel extends LitElement {
         margin-left: 10px;
         margin-bottom: 5px;
         margin-top: 5px;
+        margin-right: 10px;
       }
 
       @media (min-width: 800px) {
