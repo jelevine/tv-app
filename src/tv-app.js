@@ -11,6 +11,8 @@ export class TvApp extends LitElement {
     this.name = '';
     this.source = new URL('../assets/channels.json', import.meta.url).href;
     this.listings = [];
+    this.id = '';
+
   }
   // convention I enjoy using to define the tag's name
   static get tag() {
@@ -22,6 +24,7 @@ export class TvApp extends LitElement {
       name: { type: String },
       source: { type: String },
       listings: { type: Array },
+      id: { type: String }
     };
   }
   // LitElement convention for applying styles JUST to our element
@@ -31,14 +34,17 @@ export class TvApp extends LitElement {
       :host {
         display: block;
         padding-left: 10px;
+        padding-top: 30px;
       }
 
       .course-topics{
         display: flex;
         flex-direction: column;
         width: 275px;
-        max-height: 540px;
+        max-height: 485px;
         overflow: auto;
+        padding-top: 10px;
+        padding-right: 5px;
 
       }
       @media (min-width){
@@ -60,6 +66,7 @@ export class TvApp extends LitElement {
             <tv-channel 
               title="${item.title}"
               presenter="${item.metadata.author}"
+              id='${item.id}'
               @click="${this.itemClick}"
             >
             </tv-channel>
